@@ -14,42 +14,50 @@
 * {
   font-family: "cwTeXYen", serif;
 }
-.welcome-section {
+#welcome-section {
   height: 80vh;
   width: 100%;
 }
-.wrapper {
-  padding: 100px 50px;
-}
 .dynamic-txts {
-  line-height: 50px;
-}
-@keyframes show {
-  100% {
-    height: 200px;
-  }
-}
-.dynamic-txts p {
-  list-style: none;
-  font-size: 20px;
-}
-.dynamic-txts p span {
-  position: relative;
-}
-.dynamic-txts p span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 50px;
+  margin-top: 10%;
   width: 100%;
-  background: white;
-  border-left: 2px solid;
-  animation: typing 3s steps(17) infinite;
+  height: 100%;
 }
-@keyframes typing {
+.line_1,
+.line_2,
+.line_3 {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+}
+.line_1 {
+  animation: line 5s steps(26, end) 1s 1 normal both;
+}
+.line_2 {
+  animation: line 5s steps(26, end) 1s 1 normal both;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+.line_3 {
+  animation: line 6s steps(26, end) 1s 1 normal both;
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+@keyframes line {
+  0% {
+    border-right: none;
+    width: 0;
+  }
+  1% {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+  }
+  99% {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    width: 26rem;
+  }
   100% {
-    left: 100%;
-    margin: 0 -25px 0 25px;
+    border-right: none;
   }
 }
 .top {
@@ -68,7 +76,7 @@
   bottom: 50px;
 }
 @media (max-width: 768px) {
-  .wrapper {
+  .dynamic-txts {
     display: none;
   }
 }
