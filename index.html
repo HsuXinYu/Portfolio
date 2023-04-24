@@ -35,7 +35,7 @@
         <div id="navbarToggleExternalContent" class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link lead" href="#">關於我</a>
+              <a class="nav-link" href="#">關於我</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">網頁設計</a>
@@ -56,41 +56,64 @@
         </div>
       </nav>
       <br />
-      <div id="welcome-section" class="mt-5" align="center">
-        <img class="d-block rounded-circle" src="images/me.jpg" alt="" />
-        <h1 class="m-3">許馨予</h1>
-        <h3 class="m-3">畢業於國立臺北商業大學&emsp;資訊管理系</h3>
-        <h5>
-          我是一個喜歡思考也喜歡跟人交換想法的人<br />
-          與人溝通時，我會懂得站在對方立場思考問題<br />
-          遇到問題時，習慣多方嘗試並找尋最適當的解決方法
-        </h5>
-        <hr />
+      <div class="welcome-section row mt-5">
+        <div class="col-6" align="center">
+          <img class="rounded-circle" src="images/me.jpg" alt="me" />
+          <h1 class="m-3">許馨予</h1>
+          <h3 class="m-3">畢業於國立臺北商業大學&emsp;資訊管理系</h3>
+        </div>
+        <div class="col-6 wrapper">
+          <div class="dynamic-txts">
+            <p>
+              <span
+                >我是一個喜歡思考也喜歡跟人交換想法的人。與人溝通時，我會懂得站在對方立場思考問題。遇到問題時，習慣多方嘗試並找尋最適當的解決方法</span
+              >
+            </p>
+          </div>
+        </div>
       </div>
+      <hr />
       <br />
       <div id="projects" align="center">
         <h1>網頁設計</h1>
-        <div class="row">
-          <a
-            class="project-tile col-md-6"
-            target="_blank"
-            href="https://codepen.io/HsuXinYu/pen/oNaXVad"
-          >
-            <img src="images/TributePage.jpg" alt="project" width="100%" />
-          </a>
-
-          <a
-            class="project-tile col-md-6"
-            target="_blank"
-            href="https://codepen.io/HsuXinYu/pen/dygoLrb"
-          >
-            <img
-              src="images/Calculator.jpg"
-              alt="project"
-              width="80%"
-              height="80%"
-            />
-          </a>
+        <div class="card-columns">
+          <div class="card">
+            <blockquote class="blockquote card-body">
+              <a
+                target="_blank"
+                href="https://hsuxinyu.github.io/TicTacToe/tictactoe.html"
+              >
+                <img
+                  class="card-img-top"
+                  src="images/TicTacToe.jpg"
+                  alt="project"
+                />
+              </a>
+            </blockquote>
+          </div>
+          <div class="card">
+            <blockquote class="blockquote card-body">
+              <a target="_blank" href="https://codepen.io/HsuXinYu/pen/dygoLrb">
+                <img
+                  class="card-img-top"
+                  src="images/Calculator.jpg"
+                  alt="project"
+                />
+              </a>
+            </blockquote>
+          </div>
+          <div class="card">
+            <blockquote class="blockquote card-body">
+              <a target="_blank" href="https://codepen.io/HsuXinYu/pen/oNaXVad">
+                <img
+                  class="card-img-top"
+                  src="images/TributePage.jpg"
+                  alt="project"
+                  width="100%"
+                />
+              </a>
+            </blockquote>
+          </div>
         </div>
       </div>
       <div id="collection-PS" class="mt-5" align="center">
